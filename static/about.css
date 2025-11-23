@@ -1,0 +1,274 @@
+@media (max-width: 768px) {
+  .card {
+    padding: 20px 15px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+    margin-top: 5rem;
+}
+
+header {
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    width: 100%;
+    background-color: #242424;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#f15, #ef5656);
+}
+
+.logo-img {
+    height: 100%;
+    width: 100px;
+    overflow: hidden;
+}
+
+.logo-img img{
+height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    background-color: #eee3e3;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.header-menu a {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    color: #242424;
+    background-color: rgb(229, 227, 228);
+    padding: 5px;
+    width: 5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header-menu :hover {
+    transition: 1s;
+    background-color: #f15;
+}
+
+
+
+.main-card {
+    font-family: "Dosis", sans-serif;
+    background-color: #eee3e3;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0, 0.3);
+    margin-top: 8rem;
+    opacity: 0;
+    animation: fade 0.7s ease forwards;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(15px);}
+    to   { opacity: 1; transform: translateY(0);}
+}
+
+.main-title {
+    margin-bottom: 16px;
+}
+
+.dif-section {
+    width: 100%;
+    padding: 40px 0;
+    font-family: "Dosis", sans-serif;
+
+}
+
+.dif-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+.dif-subtitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffecec;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+.dif-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    scrollbar-width: none;
+}
+
+.dif-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* container do carrossel */
+.dif-carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    scrollbar-width: none;
+    position: relative;
+}
+
+.dif-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* faixa que será animada */
+.dif-track {
+    display: flex;
+    gap: 20px;
+    animation: autoScroll 20s linear infinite;
+}
+
+/* cards */
+.dif-card {
+    min-width: 280px;
+    max-width: 280px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.10);
+    scroll-snap-align: start;
+}
+
+.dif-card h3 {
+    margin-bottom: 2rem;
+}
+
+/* pausa a animação ao passar o mouse NO CARDS */
+.dif-carousel:hover .dif-track {
+    animation-play-state: paused;
+}
+
+/* efeito no card ao passar o mouse */
+.dif-card {
+    transition: transform .3s ease, background-color .3s ease, box-shadow .3s ease;
+}
+
+.dif-card:hover {
+    transform: translateY(-8px);
+    background-color: #242424;
+    color: #eee3e3;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+}
+
+
+@keyframes autoScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
+
+.dif-track:hover {
+    animation-play-state: paused;
+}
+
+
+/* Pizza Section */
+
+.pizza-cards {
+    font-family: "Dosis", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.pizza-section h2 {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+.pizza-card {
+    width: 260px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transition: transform .2s ease, box-shadow .2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pizza-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+.pizza-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+.pizza-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+    text-align: center;
+}
+
+.pizza-card p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #444;
+    text-align: center;
+}

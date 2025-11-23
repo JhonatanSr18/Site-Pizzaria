@@ -1,0 +1,175 @@
+
+
+
+/*.dosis-<uniquifier> {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+@media (max-width: 768px) {
+  .card {
+    padding: 20px 15px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #242424;
+}
+
+.logo-img {
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo-img img{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    background-color: #eee3e3;
+    height: 5rem;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 20%;
+    margin-bottom: 0.5rem;
+}
+
+.header-menu a {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    color: #242424;
+    background-color: rgb(229, 227, 228);
+    padding: 5px;
+    width: 5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header-menu :hover {
+    transition: 1s;
+    background-color: #f15;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#f15, #ef5656);
+}
+
+main {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+.login-card {
+    font-family: "Dosis", sans-serif;
+    min-width: auto;
+    background: linear-gradient(#242424, #0b0b0b);
+    border-radius: 25px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.508);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 35px 25px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.6s ease;
+}
+
+.login-card p {
+    color: #eee3e3;
+}
+
+.login-input input {
+    padding: 10px;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-input p {
+    display: flex;
+    align-items: baseline;
+    margin-left: 0.7rem;
+}
+
+.login-input input {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    height: 30px;
+    width: 95%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.create-account {
+    padding: 1rem;
+}
+
+.create-account a {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f15;
+}
+
+.create-account :hover {
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.login-btn button {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    width: 95.8%;
+    height: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #ef5656;
+
+
+}
+
+.login-btn :hover {
+    transition: 0.5s;
+    background-color: rgb(222, 9, 70);
+    color: #ffffff;
+}
