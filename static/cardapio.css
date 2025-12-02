@@ -1,0 +1,167 @@
+@media (max-width: 768px) {
+  .card {
+    padding: 20px 15px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+    margin-top: 5rem;
+}
+
+header {
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    width: 100%;
+    background-color: #242424;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#f15, #ef5656);
+}
+
+.logo-img {
+    height: 100%;
+    width: 100px;
+    overflow: hidden;
+}
+
+.logo-img img{
+height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    background-color: #eee3e3;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.header-menu a {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    color: #242424;
+    background-color: rgb(229, 227, 228);
+    padding: 5px;
+    width: 5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header-menu :hover {
+    transition: 1s;
+    background-color: #f15;
+}
+
+.cardapio-container {
+    font-family: "Dosis", sans-serif;
+    background-color: #eee3e3;
+    width: 90%;
+    margin: 0 auto;
+
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0, 0.3);
+    margin-top: 8rem;
+    opacity: 0;
+    animation: fade 0.7s ease forwards;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(15px);}
+    to   { opacity: 1; transform: translateY(0);}
+}
+
+
+.cardapio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    border-radius: 24px;
+    padding: 2rem;
+    font-family: "Dosis", sans-serif;
+}
+
+.cardapio-container h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+.cardapio-main img {
+    height: 10rem;
+    width: 10rem;
+}
+
+
+
+.cardapio-cards {
+    background: #242424;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    max-width: 200px;
+    max-height: 280px;
+
+}
+
+.cardapio-cards img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+}
+
+.cardapio-cards h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #eee3e3;
+    text-align: center;
+}
+
+.cardapio-cards a {
+    text-decoration: none;
+    color: #f15;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 768px) {
+  .cardapio-cards {
+    width: 100%;
+    max-width: 300px;
+  }
+}

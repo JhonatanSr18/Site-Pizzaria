@@ -272,3 +272,53 @@ height: 100%;
     color: #444;
     text-align: center;
 }
+
+
+.cta-section {
+    display: flex;
+    font-family: "Dosis", sans-serif;
+}
+
+.cta-card {
+    background-color: #eee3e3;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cta-content {
+    text-align: center;
+}
+
+.cta-content h3 {
+    color: #f15;
+}
+
+.cta-button {
+    background-color: #f15;
+    text-align: center;
+    width: 12rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 14px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .3s ease;
+    display: inline-block;
+    
+}
+
+.cta-button a {
+    text-decoration: none;
+    color: #eee3e3;
+
+}
+
+.cta-button:hover {
+    background: #242424;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
